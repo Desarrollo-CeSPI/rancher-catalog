@@ -13,6 +13,7 @@ services:
     - /proc:/rootfs/proc:ro
     - /etc:/rootfs/etc:ro
     - /:/hostfs:ro
+    - /var/run/utmp:/var/run/utmp:ro
     labels:
       io.rancher.scheduler.global: 'true'
       io.rancher.container.pull_image: always

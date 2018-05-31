@@ -2,7 +2,7 @@ name: "Telegraf collector for rancher hosts"
 description: |
   Rancher telegraf integration: collect data from each environment
   host and send it to influx
-version:  v1.0.0
+version:  1.0.0
 category: Monitoring
 labels:
   io.rancher.orchestration.supported: 'cattle'

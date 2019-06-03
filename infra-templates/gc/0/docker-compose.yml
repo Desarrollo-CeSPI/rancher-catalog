@@ -1,0 +1,15 @@
+version: '2'
+services:
+  gc:
+    image: spotify/docker-gc
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock:ro
+    - /sys:/rootfs/sys:ro
+    - /proc:/rootfs/proc:ro
+    - /etc:/rootfs/etc:ro
+    - /:/hostfs:ro
+    - /var/run/utmp:/var/run/utmp:ro
+    labels:
+      io.rancher.container.start_once: 'true'
+      io.rancher.scheduler.global: 'true'
+      cron.schedule: '0 * * * * ?'

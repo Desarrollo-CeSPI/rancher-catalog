@@ -1,0 +1,8 @@
+name: "Garbage collector for rancher hosts"
+description: |
+  Garbage collector integration: Garbage collector for Docker
+  host and send it to influx
+version:  1.0.0
+category: Monitoring
+labels:
+  io.rancher.orchestration.supported: 'cattle'
